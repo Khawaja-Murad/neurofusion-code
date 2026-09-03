@@ -1,0 +1,35 @@
+# Secrets
+.env
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Data, weights, and per-case artifacts — never committed
+out/
+predictions/
+checkpoints/
+*.ckpt
+*.pt
+*.safetensors
+*.jsonl
+*.nii
+*.nii.gz
+
+# Runtime
+logs/
+runs/
+scratch/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store

@@ -1,0 +1,52 @@
+# NeuroFusion Phase 1 — pinned requirements
+# Generated: 2026-05-10
+# Platform: Compute Canada Narval, CUDA 12.1, Python 3.10
+#
+# Install: pip install -r requirements.txt
+# NOTE: PyTorch must be installed separately with the cu121 index URL (see setup.sh)
+
+# ── Core DL ──────────────────────────────────────────────────────────────────
+torch==2.2.0+cu121          # install via setup.sh (CUDA wheel index)
+torchvision==0.17.0+cu121
+torchaudio==2.2.0+cu121
+
+# ── HuggingFace ecosystem ─────────────────────────────────────────────────────
+transformers>=4.40.0,<5.0.0
+peft>=0.10.0,<1.0.0
+bitsandbytes>=0.43.0        # 4-bit QLoRA on CUDA
+accelerate>=0.28.0
+
+# ── Segmentation backbone ─────────────────────────────────────────────────────
+nnunetv2>=2.2.1             # provides MedNeXt
+
+# ── JSON-constrained decoding ─────────────────────────────────────────────────
+xgrammar>=0.1.0             # may require manual source build on Narval
+
+# ── 3D medical imaging ────────────────────────────────────────────────────────
+monai>=1.3.0,<2.0.0
+nibabel>=5.0.0
+SimpleITK>=2.3.0
+nilearn>=0.10.0
+
+# ── Saliency ─────────────────────────────────────────────────────────────────
+pytorch-grad-cam>=1.5.0
+
+# ── Evaluation ────────────────────────────────────────────────────────────────
+radgraph>=0.1.0
+f1chexbert>=0.1.0
+
+# ── Data handling ─────────────────────────────────────────────────────────────
+pydantic>=2.0.0,<3.0.0
+jsonlines>=4.0.0
+pandas>=2.0.0
+numpy>=1.24.0,<2.0.0
+scipy>=1.11.0
+
+# ── Experiment tracking ───────────────────────────────────────────────────────
+wandb>=0.16.0
+
+# ── Dataset download ─────────────────────────────────────────────────────────
+kaggle>=1.6.0
+synapseclient>=3.0.0
+python-dotenv>=1.0.0       # loads neurofusion/.env (KAGGLE_USERNAME, KAGGLE_KEY, etc.)
+json_repair==0.61.7

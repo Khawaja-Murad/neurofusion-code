@@ -1,0 +1,63 @@
+cff-version: 1.2.0
+title: "NeuroFusion: Surfacing Frozen Tumor Features for Brain-Tumor MRI Reporting"
+message: "If you use this software or the findings it implements, please cite the paper below."
+type: software
+license: Apache-2.0
+repository-code: "https://github.com/Khawaja-Murad/neurofusion-code"
+authors:
+  - family-names: "Khawaja"
+    given-names: "Murad ul Hassan"
+    affiliation: "National University of Sciences and Technology, Islamabad, Pakistan"
+    email: "khawajamurad@outlook.com"
+  - family-names: "Adil"
+    given-names: "Ruqiyya"
+    affiliation: "National University of Sciences and Technology, Islamabad, Pakistan"
+  - family-names: "Qayyum"
+    given-names: "Adil"
+    affiliation: "Consultant Radiologist, Rawalpindi, Pakistan"
+  - family-names: "Hassan"
+    given-names: "Rida"
+    affiliation: "Bahria University Health Sciences Campus, Islamabad, Pakistan"
+  - family-names: "Khan"
+    given-names: "Asad Mansoor"
+    affiliation: "National University of Sciences and Technology, Islamabad, Pakistan"
+  - family-names: "Akram"
+    given-names: "Muhammad Usman"
+    affiliation: "National University of Sciences and Technology, Islamabad, Pakistan"
+  - family-names: "Ebrahimi"
+    given-names: "Mehran"
+    affiliation: "Faculty of Science, Ontario Tech University, Oshawa, ON, Canada"
+preferred-citation:
+  type: conference-paper
+  title: "The Diagnosis a Reporter Leaves Unspoken: Surfacing Frozen Tumor Features for Brain-Tumor MRI Reporting"
+  collection-title: "Machine Learning in Clinical Neuroimaging (MLCN), MICCAI Workshop"
+  collection-type: proceedings
+  publisher:
+    name: "Springer"
+  year: 2026
+  url: "https://arxiv.org/abs/2609.02411"
+  authors:
+    - family-names: "Khawaja"
+      given-names: "Murad ul Hassan"
+    - family-names: "Adil"
+      given-names: "Ruqiyya"
+    - family-names: "Qayyum"
+      given-names: "Adil"
+    - family-names: "Hassan"
+      given-names: "Rida"
+    - family-names: "Khan"
+      given-names: "Asad Mansoor"
+    - family-names: "Akram"
+      given-names: "Muhammad Usman"
+    - family-names: "Ebrahimi"
+      given-names: "Mehran"
+identifiers:
+  - type: other
+    value: "arXiv:2609.02411"
+    description: "arXiv preprint"
+keywords:
+  - brain tumor MRI
+  - radiology report generation
+  - medical vision-language models
+  - report faithfulness
+  - clinical reader study
